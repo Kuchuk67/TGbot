@@ -12,10 +12,6 @@ from aiogram.types import Message
 from dotenv import load_dotenv
 load_dotenv()
 
-token = os.environ.get("BOT_TOKEN")
-print(token)
-if not token:
-    raise RuntimeError("BOT_TOKEN is not")
 
 logging.basicConfig(
     level=logging.INFO,
